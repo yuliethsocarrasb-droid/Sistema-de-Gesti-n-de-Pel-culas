@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    padding:20px;
+}
+
+.contenedor{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.grupo{
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+}
+
+button{
+    background:#2196F3;
+    color:white;
+    border:none;
+    padding:12px;
+    cursor:pointer;
+    width:100%;
+}
+
+button:hover{
+    background:#0b7dda;
+}
+
+.filtros{
+    display:flex;
+    gap:10px;
+    margin:20px 0;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th, td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#2196F3;
+    color:white;
+}
+
+.btnEditar{
+    background:orange;
+    color:white;
+    border:none;
+    padding:5px 10px;
+    cursor:pointer;
+}
+
+.btnEliminar{
+    background:red;
+    color:white;
+    border:none;
+    padding:5px 10px;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    .filtros{
+        flex-direction:column;
+    }
+
+    table{
+        font-size:12px;
+    }
+}
