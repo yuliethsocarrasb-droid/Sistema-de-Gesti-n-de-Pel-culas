@@ -1,7 +1,7 @@
-// Array principal de películas
+// Este es el array principal de peliculas
 let peliculas = JSON.parse(localStorage.getItem("peliculas")) || [];
 
-// Referencias HTML
+// Ingreso referencias de HTML
 const formulario = document.getElementById("formPelicula");
 const tabla = document.getElementById("tablaPeliculas");
 const contador = document.getElementById("contador");
@@ -15,10 +15,10 @@ const idPelicula = document.getElementById("idPelicula");
 const buscar = document.getElementById("buscar");
 const filtroCategoria = document.getElementById("filtroCategoria");
 
-// Mostrar películas al iniciar
+// Metodo de mostrar peliculas al iniciar
 mostrarPeliculas();
 
-// Evento guardar
+// Para guardar evento
 formulario.addEventListener("submit", function(e){
 
     e.preventDefault();
@@ -63,7 +63,7 @@ formulario.addEventListener("submit", function(e){
 
 });
 
-// Validaciones
+// Para validar el formulario
 function validarFormulario(){
 
     if(titulo.value.trim().length < 2){
@@ -175,8 +175,8 @@ function guardarLocalStorage(){
     );
 }
 
-// Búsqueda en tiempo real
+// Para busrcar en tiempo real y filtrar por categoria 
 buscar.addEventListener("keyup", mostrarPeliculas);
 
-// Filtro por categoría
+
 filtroCategoria.addEventListener("change", mostrarPeliculas);
